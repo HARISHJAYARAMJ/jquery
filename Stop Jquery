@@ -1,0 +1,45 @@
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+	$("#stop").click(function(){
+	  $("#panel").stop();
+	  });
+	
+});
+</script>
+ 
+<style> 
+#panel, #flip {
+    
+    padding: 5px;
+	font-size:8px;
+    text-align: center;
+    background-color: #3498db;
+	color:white;
+    border: solid 1px #c3c3c3;
+	border-radius:3px;
+}
+
+#panel {
+    background-color:green;
+    padding: 50px;
+    display:none;
+}
+</style>
+</head>
+<body>
+ <center> <button id="stop"> stop</button></center>
+<div id="flip">Click to slide down </div>
+<div id="panel">Good Morning</div>
+
+</body>
+</html>
